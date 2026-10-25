@@ -45,7 +45,7 @@ async def main():
     }
     structured_result = await chatbot_sdk.get_structured_llm_response(structured_prompt, car_info_schema)
     if isinstance(structured_result, dict):
-        print(f"Structured LLM Result received with keys: {list(structured_result.keys())}")
+        print("Structured LLM Result received (structured object).")
     else:
         print(f"Structured LLM Result received (type={type(structured_result).__name__})")
 

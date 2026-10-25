@@ -51,7 +51,8 @@ class LLMResponseGenerator:
                 else:
                     return result["candidates"][0]["content"]["parts"][0]["text"]
             else:
-                print(f"LLM response structure unexpected: {result}")
+                response_summary = list(result.keys()) if isinstance(result, dict) else type(result).__name__
+                print(f"LLM response structure unexpected. Response summary: {response_summary}")
                 return "I'm sorry, I couldn't generate a response at this time."
         except requests.exceptions.RequestException as e:
             print(f"Error calling Gemini API: {e}")

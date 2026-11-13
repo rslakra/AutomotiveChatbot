@@ -3,7 +3,7 @@
 ---
 
 
-Building an AI chatbot library or SDK in Python for automobile usage is an exciting and complex project. This kind ofSDK would empower developers to integrate intelligent conversational interfaces directly into vehicle infotainment systems, mobile companion apps, or even diagnostic tools.
+Building an AI chatbot library or SDK in Python for automobile usage is an exciting and complex project. This kind of SDK would empower developers to integrate intelligent conversational interfaces directly into vehicle infotainment systems, mobile companion apps, or even diagnostic tools.
 
 The core idea is to create a Python package that can understand user queries related to automobiles, process them, and generate relevant responses or trigger specific actions.
 
